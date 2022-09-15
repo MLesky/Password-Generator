@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>RANDOM GENERATE PASSWORD</h3>
+        </header>
+        <main>
+            <div id="form" name="myForm">
+                <div id="checkboxes">
+                    <p id="select">Include: </p>
+                    <label><input type="checkbox" name="symbols" id="symbols" class="check"><b>Symbols</b></label>
+                    <label><input type="checkbox" name="digits" id="digits" class="check"><b>Numbers</b></label>
+                    <label><input type="checkbox" name="cases" id="cases" class="check"><b>Uppercase</b></label>
+                </div>
+                <p id="size">Select Length</p>
+                <label><input id="ranlen" type="checkbox" onchange="disable()" class="check"><b>Random length</b></input><br>
+                <input type="range" id="range" min="8" max="30" value="12" onchange="getRange1()"><br>
+                <input type="number" id="rngbx" min="1" max="50" value="12" onchange="getRange2()"><br>
+                <input id="password" type="text" name="password" placeholder="Generate Password">
+                <button onclick="generatePassword()"><b>Generate Password</b></button>
+            </div>
+        </main>
+        <footer>
+            <p><b>MBAH LESKY</b></p>
+        </footer>
+    </body>
+</html>
