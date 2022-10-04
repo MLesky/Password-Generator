@@ -1,4 +1,9 @@
 from kivymd.app import MDApp
+from kivymd.uix.boxlayout import MDBoxLayout
+
+
+class Options(MDBoxLayout):
+    pass
 
 class PasswordApp(MDApp):
     pass 
